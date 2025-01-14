@@ -14,8 +14,12 @@
 <h1>Weather Data API</h1>
 <h2>This is our webpage.</h2>
 <p>URL Format: http://127.0.0.1:5000/app/v1/station/date</p>
-<p>URL Example: http://127.0.0.1:5000/app/v1/10/19881025</p>
-<img src="{{url_for('static', filename='cat.png')}}" style="width: 500px">
+<p>For one station, one date: http://127.0.0.1:5000/app/v1/10/1988-10-25</p>
+<p>For one station, all dates: http://127.0.0.1:5000/app/v1/10</p>
+<p>For one station, one year: http://127.0.0.1:5000/app/v1/yearly/10/1988</p>
+<p>{{data|safe}}</p>
+<!-- <img src="{{url_for('static', filename='cat.png')}}" style="width: 500px"> -->
+
 <br>
 <a href="https://google.com">Google Page</a>
 
